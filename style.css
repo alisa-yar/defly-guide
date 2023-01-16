@@ -48,8 +48,8 @@ body {
     color: var(--greyText);
     text-align: center;
     line-height: 1.5;
-    margin: 10px auto;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .defly {
