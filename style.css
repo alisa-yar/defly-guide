@@ -7,27 +7,48 @@
     --coffeeText: #000000;
 }
 
-html, body {
+html {
     margin: 0;
     height: 100%;
-    padding: 0;
-    height: fit-content;
-    min-height: 100%;
-    
-    background-image: url('stars.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: relative;
+
+    background-color: var(--bgColor);
     display: flex;
     flex-direction: column;
-    align-items: center;
 
     font-family: var(--font);
     color: var(--textColor);
     scroll-behavior: smooth;
-    
     box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    min-height: 100%;
+}
+
+.header {
+    font-family: var(--headerFont);
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.description {
+    font-family: var(--describeFont);
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--greyText);
+    text-align: center;
+    line-height: 1.5;
+    margin: 10px auto;
+}
+
+.defly {
+    color: var(--blueText);
+    text-decoration: none;
 }
 
 .youtube {
