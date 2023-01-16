@@ -2,15 +2,15 @@
 
 :root {
     --textColor: #FFFFFF;
-    --purple: #9942F4;
+    --purple: #9D44F0;
     --greyText: #9B9B9B;
     
     --font: 'Karla', sans-serif;
     --headerFont: 'Poppins', sans-serif, 'arial';
     --describeFont: 'Roboto', sans-serif, 'arial';
     
-    --bgColor: #2D2D2D;
-    --bgInput: #444442;
+    --bgColor: #131313;
+    --bgInput: #3E3E3E;
 }
 
 * { 
