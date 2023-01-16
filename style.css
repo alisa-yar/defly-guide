@@ -29,3 +29,27 @@ body {
     height: fit-content;
     min-height: 100%;
 }
+
+.youtube {
+    max-width: 675px;
+    width: auto;
+    display: block;
+    margin: 27px auto;
+}
+
+.video {
+    position: relative;
+    background-color: transparent;
+    color: var(--textColor);
+    border: solid var(--textColor) 2px;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px; 
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
