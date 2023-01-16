@@ -2,7 +2,7 @@
 
 :root {
     --textColor: #FFFFFF;
-    --blueText: #0073E5;
+    --purple: #9942F4;
     --greyText: #9B9B9B;
     
     --font: 'Karla', sans-serif;
@@ -58,7 +58,7 @@ body {
 }
 
 .defly {
-    color: var(--blueText);
+    color: var(--purple);
     text-decoration: none;
 }
 
@@ -78,7 +78,7 @@ body {
     border-radius: 12px;
     box-sizing: border-box;
     position: relative;
-    border: solid var(--blueText) 2px;
+    border: solid var(--purple) 2px;
     border-radius: 12px;
     display: block;
     padding: 10px;
