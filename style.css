@@ -14,7 +14,7 @@
 }
 
 html {
-    margin: 10px;
+    margin: auto;
     height: 100%;
 
     background-color: var(--bgColor);
@@ -27,11 +27,11 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: auto;
     padding: 0;
     height: fit-content;
     min-height: 100%;
-    width: 100%;
+    max-width: 675px;
 }
 
 .header {
