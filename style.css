@@ -75,7 +75,7 @@ body {
     border: solid var(--purple) 2px;
     border-radius: 12px;
     display: block;
-    padding: 10px;
+    padding: 20px;
     background-color: black;
     margin: 10px auto;
 }
