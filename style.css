@@ -64,11 +64,14 @@ body {
 
 .youtube {
     max-width: 675px;
-    width: auto;
-    display: block;
-    margin: 10px auto;
     width: 100%;
+    display: block;
     position: center;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: transparent;
+    color: var(--textColor);
+    box-sizing: border-box;
 }
 
 .video {
