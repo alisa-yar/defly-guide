@@ -85,3 +85,20 @@ body {
     background-color: black;
     margin: 10px auto;
 }
+
+footer {
+    font-family: var(--describeFont);
+    font-weight: 400;
+    font-size: 5px;
+    color: var(--greyText);
+    text-align: center;
+    line-height: 1.5;
+    margin: 10px auto;
+}
+
+.alisa {
+    color: var(--purple);
+    background: none;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
