@@ -7,9 +7,12 @@
     --coffeeText: #000000;
 }
 
-html {
+html, body {
     margin: 0;
-    hight: 100%;
+    height: 100%;
+    padding: 0;
+    height: fit-content;
+    min-height: 100%;
     
     background-image: url('stars.jpg');
     background-repeat: no-repeat;
@@ -25,13 +28,6 @@ html {
     scroll-behavior: smooth;
     
     box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    height: fit-content;
-    min-height: 100%;
 }
 
 .youtube {
@@ -52,6 +48,8 @@ body {
     display: block;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
-    margin: 10px auto;
-    padding: 10px; 
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
 }
