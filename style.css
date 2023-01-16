@@ -31,14 +31,17 @@ body {
 }
 
 .youtube {
-    max-width: 675px;
-    width: auto;
-    display: block;
-    margin: 27px auto;
+    position: relative;
+    padding-bottom: 56.25%; /* - 16:9 aspect ratio (most common) */
+    /* padding-bottom: 62.5%; - 16:10 aspect ratio */
+    /* padding-bottom: 75%; - 4:3 aspect ratio */
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
 }
 
 .video {
-    position: relative;
+    /*position: relative;
     background-color: transparent;
     color: var(--textColor);
     border: solid var(--textColor) 2px;
@@ -51,5 +54,11 @@ body {
     margin-bottom: 10px;
     padding: 10px; 
     text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;*/
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
