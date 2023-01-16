@@ -2,9 +2,20 @@
 
 :root {
     --textColor: #FFFFFF;
+    --blueText: #0073E5;
+    --greyText: #9B9B9B;
+    
     --font: 'Karla', sans-serif;
-    --coffeeYellow: #FFDD00;
-    --coffeeText: #000000;
+    --headerFont: 'Poppins', sans-serif, 'arial';
+    --describeFont: 'Roboto', sans-serif, 'arial';
+    
+    --bgColor: #2D2D2D;
+    --bgInput: #444442;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
 }
 
 html {
