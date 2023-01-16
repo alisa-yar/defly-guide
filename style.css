@@ -17,6 +17,9 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    font-family: var(--font);
+    color: var(--textColor);
     scroll-behavior: smooth;
 }
 
@@ -28,14 +31,14 @@ body {
 }
 
 .youtube {
-   max-width: 675px;
-   width: auto;
-   display: block;
-   margin: 27px auto;
+    max-width: 675px;
+    width: auto;
+    display: block;
+    margin: 27px auto;
 }
 
 .video {
-    position: absolute;
+    position: relative;
     background-color: transparent;
     color: var(--textColor);
     border: solid var(--textColor) 2px;
