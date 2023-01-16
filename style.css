@@ -75,9 +75,8 @@ body {
     border: solid var(--purple) 2px;
     border-radius: 12px;
     display: block;
-    padding:0 auto;
+    padding: 20px;
     background-color: black;
-    margin: 20px auto;
 }
 
 footer {
