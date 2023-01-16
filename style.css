@@ -88,10 +88,9 @@ footer {
     color: var(--greyText);
     text-align: center;
     line-height: 1.5;
-    margin: 10px auto;
+    margin-top: auto;
     position: relative;
 }
-
 
 .alisa {
     color: var(--purple);
