@@ -13,11 +13,6 @@
     --bgInput: #3E3E3E;
 }
 
-* { 
-    margin: 0;
-    padding: 0;
-}
-
 html {
     margin: 0;
     height: 100%;
@@ -29,7 +24,6 @@ html {
     font-family: var(--font);
     color: var(--textColor);
     scroll-behavior: smooth;
-    box-sizing: border-box;
 }
 
 body {
@@ -89,7 +83,7 @@ body {
 footer {
     font-family: var(--describeFont);
     font-weight: 400;
-    font-size: 10px;
+    font-size: 15px;
     color: var(--greyText);
     text-align: center;
     line-height: 1.5;
