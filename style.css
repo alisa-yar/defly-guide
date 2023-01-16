@@ -74,14 +74,13 @@ body {
 .video {
     position: relative;
     background-color: transparent;
-    border: solid var(--textColor) 2px;
-    border-radius: 10px;
-    text-align: center;
+    border: solid var(--blueText) 2px;
+    border-radius: 12px;
     display: block;
-    text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
     padding: 10px;
+    background-color: black;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
