@@ -89,7 +89,8 @@ footer {
     text-align: center;
     line-height: 1.5;
     margin-top: auto;
-    position: relative;
+    position: absolute;
+    bottom: 0;
 }
 
 .alisa {
