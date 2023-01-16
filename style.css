@@ -76,7 +76,7 @@ body {
     border: solid var(--purple) 2px;
     border-radius: 12px;
     display: block;
-    padding:0 auto;
+    padding:10px;
     background-color: black;
     margin: 20px auto;
 }
@@ -89,6 +89,13 @@ footer {
     text-align: center;
     line-height: 1.5;
     margin: 10px auto;
+    position:fixed;
+    z-index:9999;
+    top:16px;
+    left:16px;
+    right:16px;
+    bottom:16px;
+    pointer-events:none
 }
 
 
