@@ -89,7 +89,7 @@ body {
 footer {
     font-family: var(--describeFont);
     font-weight: 400;
-    font-size: 5px;
+    font-size: 10px;
     color: var(--greyText);
     text-align: center;
     line-height: 1.5;
