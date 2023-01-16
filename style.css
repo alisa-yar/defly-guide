@@ -47,7 +47,7 @@ body {
     margin: 10px auto;
 }
 
-.description, .footer {
+.description, footer {
     font-family: var(--describeFont);
     font-weight: 400;
     font-size: 20px;
