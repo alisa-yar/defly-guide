@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html> 
-
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +8,173 @@
   <!-- <script src="https://kit.fontawesome.com/6bee25835f.js" crossorigin="anonymous"></script> -->
   <link rel="icon" href="defly.png" type="image/x-icon" />
 </head>
-  
+
+<!-- STYLE -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;&display=swap');
+
+:root {
+    --font: 'Inter', sans-serif;
+    
+    --textColor: #FFFFFF; /*white*/
+    --purpleText: #9D44F0;
+    --greyText: #9B9B9B;
+    
+    --bgColor: #222429; /*dark grey*/
+    --bgLinks: #444442; /*lighter grey*/
+    --greyColor: #2D2D2D; /*lighter grey*/
+}
+
+html {
+    margin: auto;
+    height: auto;
+
+    background-color: var(--bgColor);
+
+    font-family: var(--font);
+    color: var(--textColor);
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    position: center;
+    text-align: center;
+}
+
+body {
+    padding: auto;
+    height: fit-content;
+    display: block;
+    position: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+.header {
+    font-family: var(--headerFont);
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.description {
+    font-family: var(--describeFont);
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--greyText);
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.defly {
+    color: var(--purpleText);
+    text-decoration: none;
+}
+
+.youtube {
+    max-width: 500px;
+    width: 100%;
+    display: block;
+    position: center;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: transparent;
+    color: var(--textColor);
+    box-sizing: border-box;
+}
+
+.video {
+    border-radius: 12px;
+    box-sizing: border-box;
+    position: relative;
+    border: solid var(--purpleText) 2px;
+    border-radius: 12px;
+    display: block;
+    padding:10px;
+    background-color: black;
+    margin: 20px auto;
+}
+
+footer {
+    font-family: var(--describeFont);
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--greyText);
+    text-align: center;
+    line-height: 1.5;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.alisa {
+    color: var(--purpleText);
+    background: none;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+@media (hover: hover) {
+    .alisa:hover {
+    color: var(--purpleText);
+    }
+}
+
+.alisa:active {
+    background-color: transparent;
+}
+
+.filterDiv {
+  float: center;
+  background-color: transparent;
+  color: #ffffff;
+  width: auto;
+  line-height: 100px;
+  text-align: center;
+  margin: 10px;
+  display: none;
+  border-radius: 12px;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  display: inline-block;
+  width: auto;
+  position: center;
+  margin: 10px auto;
+  padding: 12px 16px;
+  border: none;
+  outline: none;
+  background-color: #333740;
+  cursor: pointer;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #b1b8ca;
+}
+
+.btn:hover {
+  background-color: var(--purpleText);
+  color: #ffffff;
+}
+
+.btn.active {
+  background-color: var(--purpleText);
+  color: #ffffff;
+}
+</style>
+
+<!-- BODY -->
 <body>
-  
 <div class="header">
     Defly Wallet Guide
 </div>
@@ -20,40 +183,115 @@
   <a class="defly" href="https://defly.app/" target="_blank">Defly Wallet</a>
   is Algorand’s leading DeFi wallet app for decentralized trading.
 </div>
-  
-<div class="youtube">
-<iframe class="video" width="auto" height="auto" src="https://www.youtube.com/embed/-VNH4Fl7m2I" 
-        title="YouTube video player" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')">Show all</button>
+  <button class="btn" onclick="filterSelection('general')">General</button>
+  <button class="btn" onclick="filterSelection('defi')">DeFi</button>
+  <button class="btn" onclick="filterSelection('nft')">NFTs</button>
+</div>
+
+<div class="container">
+<div class="filterDiv general">
+<iframe class="video" width="auto" 
+  height="auto" src="https://www.youtube.com/embed/-VNH4Fl7m2I" 
+  title="YouTube video player" frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; 
+  encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen>
 </iframe>
+</div>
 
-<iframe class="video" width="auto" height="auto" src="https://www.youtube.com/embed/qrxqmL6nQuE" 
-        title="YouTube video player" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+<div class="filterDiv defi">
+<iframe class="video" width="auto" 
+  height="auto" src="https://www.youtube.com/embed/qrxqmL6nQuE" 
+  title="YouTube video player" frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; 
+  encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen>
 </iframe>
-
-<iframe class="video" width="auto" height="auto" src="https://www.youtube.com/embed/fCyPySqXD6U" 
-title="YouTube video player" frameborder="0" 
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-</iframe>
-  
-<iframe class="video" width="auto" height="auto" src="https://www.youtube.com/embed/qNbVCQFZ2gE" 
-        title="YouTube video player" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-  </iframe>
-
-<iframe class="video" width="auto" height="auto" src="https://www.youtube.com/embed/RaXg9aiaRGE" 
-        title="YouTube video player" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-  </iframe>
-
 </div>
   
+<div class="filterDiv defi">
+<iframe class="video" width="auto" 
+  height="auto" src="https://www.youtube.com/embed/fCyPySqXD6U" 
+  title="YouTube video player" frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; 
+  encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen>
+</iframe>
+</div>
+
+<div class="filterDiv defi">
+<iframe class="video" width="auto" 
+  height="auto" src="https://www.youtube.com/embed/qNbVCQFZ2gE" 
+  title="YouTube video player" frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; 
+  encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen>
+</iframe>
+</div>
+
+<div class="filterDiv nft">
+<iframe class="video" width="auto" 
+  height="auto" src="https://www.youtube.com/embed/RaXg9aiaRGE" 
+  title="YouTube video player" frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; 
+  encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen>
+</iframe>
+</div>
+
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
 <footer>
    <p>Build by <a class="alisa" href="https://twitter.com/alisayar_/" target="_blank">alisa.algo</a>
    | 2023</p>
   </footer>
-  
 </body>
-  
 </html>
