@@ -1,44 +1,43 @@
-@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;&display=swap');
 
 :root {
-    --textColor: #FFFFFF;
-    --purple: #9D44F0;
+    --font: 'Inter', sans-serif;
+    
+    --textColor: #FFFFFF; /*white*/
+    --purpleText: #9D44F0;
     --greyText: #9B9B9B;
     
-    --font: 'Karla', sans-serif;
-    --headerFont: 'Poppins', sans-serif, 'arial';
-    --describeFont: 'Roboto', sans-serif, 'arial';
-    
-    --bgColor: #131313;
-    --bgInput: #3E3E3E;
+    --bgColor: #222429; /*dark grey*/
+    --bgLinks: #444442; /*lighter grey*/
+    --greyColor: #2D2D2D; /*lighter grey*/
 }
 
 html {
     margin: auto;
-    height: 100%;
+    height: auto;
 
     background-color: var(--bgColor);
-    display: flex;
-    flex-direction: column;
 
     font-family: var(--font);
     color: var(--textColor);
     scroll-behavior: smooth;
+    box-sizing: border-box;
+    position: center;
+    text-align: center;
 }
 
 body {
-    margin: auto;
-    padding: 0;
+    padding: auto;
     height: fit-content;
-    min-height: 100%;
-    width: 100%;
     display: block;
-    position: center
+    position: center;
+    max-width: 500px;
+    margin: auto;
 }
 
 .header {
     font-family: var(--headerFont);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 36px;
     text-align: center;
     margin: 10px auto;
@@ -46,7 +45,7 @@ body {
 
 .description {
     font-family: var(--describeFont);
-    font-weight: 400;
+    font-weight: 500;
     font-size: 20px;
     color: var(--greyText);
     text-align: center;
@@ -56,12 +55,12 @@ body {
 }
 
 .defly {
-    color: var(--purple);
+    color: var(--purpleText);
     text-decoration: none;
 }
 
 .youtube {
-    max-width: 675px;
+    max-width: 500px;
     width: 100%;
     display: block;
     position: center;
@@ -76,7 +75,7 @@ body {
     border-radius: 12px;
     box-sizing: border-box;
     position: relative;
-    border: solid var(--purple) 2px;
+    border: solid var(--purpleText) 2px;
     border-radius: 12px;
     display: block;
     padding:10px;
@@ -97,7 +96,7 @@ footer {
 }
 
 .alisa {
-    color: var(--purple);
+    color: var(--purpleText);
     background: none;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
@@ -105,10 +104,56 @@ footer {
 
 @media (hover: hover) {
     .alisa:hover {
-    color: var(--purple);
+    color: var(--purpleText);
     }
 }
 
 .alisa:active {
     background-color: transparent;
+}
+
+.filterDiv {
+  float: center;
+  background-color: transparent;
+  color: #ffffff;
+  width: auto;
+  line-height: 100px;
+  text-align: center;
+  margin: 10px;
+  display: none;
+  border-radius: 12px;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.btn {
+  display: inline-block;
+  width: auto;
+  position: center;
+  margin: 10px auto;
+  padding: 12px 16px;
+  border: none;
+  outline: none;
+  background-color: #333740;
+  cursor: pointer;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #b1b8ca;
+}
+
+.btn:hover {
+  background-color: var(--purpleText);
+  color: #ffffff;
+}
+
+.btn.active {
+  background-color: var(--purpleText);
+  color: #ffffff;
 }
