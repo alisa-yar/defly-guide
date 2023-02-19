@@ -83,7 +83,7 @@ body {
     margin: 20px auto;
 }
 
-footer {
+.footer {
     font-family: var(--describeFont);
     font-weight: 400;
     font-size: 15px;
